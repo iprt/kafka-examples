@@ -1,0 +1,8 @@
+### producer: Create a message
+POST http://127.0.0.1:8081/producer/createMsg
+Content-Type: application/json
+Accept: application/json
+
+{
+  "msg": "{{$uuid}}"
+}

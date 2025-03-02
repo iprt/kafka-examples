@@ -1,0 +1,18 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: kafka-consumer
+  profiles:
+    include:
+      - consumer
+      - kafka-config
+  main:
+    banner-mode: off
+    web-application-type: none
+  mvc:
+    static-path-pattern: /statics/**
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss.SSS
+    time-zone: GMT+8

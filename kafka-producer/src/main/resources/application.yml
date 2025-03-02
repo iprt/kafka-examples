@@ -1,0 +1,17 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: kafka-producer
+  profiles:
+    include:
+      - producer
+      - kafka-config
+  main:
+    banner-mode: off
+  mvc:
+    static-path-pattern: /statics/**
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss.SSS
+    time-zone: GMT+8
